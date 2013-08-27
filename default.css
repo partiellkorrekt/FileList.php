@@ -1,0 +1,42 @@
+body { 
+	background-color: #d5d5d5;
+	font-family: sans-serif;
+	font-size: 13px;
+}
+
+h1 {
+	padding: 10px;
+	margin: 10px;
+	margin-top: 20px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px 0px #666;
+}
+
+div.file_rep {
+	width: 400px;
+	height: 100px;
+	padding: 10px;
+	background-color: #fff;
+	margin: 10px;
+	box-shadow: 0px 0px 10px 0px #666;
+	display: inline-block;
+}
+
+div.file_rep > div.thumb_container {
+	float: left;
+	margin-right: 10px;
+	width: 100px;
+	text-align: center;
+}
+
+div.file_rep a {
+	display: inline-block;
+	font-size: 16px;
+	margin-bottom: 10px;
+	
+	text-decoration: none;
+}
+
+div.file_rep a:hover {
+	text-decoration: underline;
+}
