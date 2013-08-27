@@ -4,14 +4,14 @@ require_once "FileView.php";
 <!doctype html>
 <html>
 <head>
-	<title>Übersicht aller Dateien</title>
+	<title>Overview over your Files</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="default.css" />
 </head>
 
 <body>
 
-<h1>Übersicht aller Dateien</h1>
+<h1>Overview over your Files</h1>
 <?php
 	$fileDir = "files";
 	$files = scandir($fileDir);
