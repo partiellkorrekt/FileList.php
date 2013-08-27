@@ -14,3 +14,7 @@ After that load the directory in your browser. The first time may be a little sl
 ## Adding new ThumbnailHandlers
 Place all your ThumbnailHandlers in /ThumbnailHandlers
 You can use the ImageHandler as an example Handler. You don't need to worry about caching as this is done by the parent class ThumbnailHandler.
+
+## Icons
+The icons come from this project: https://github.com/teambox/Free-file-icons
+More details inside the icons folder
