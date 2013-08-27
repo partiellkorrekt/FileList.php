@@ -27,7 +27,10 @@ class ImageHandler extends ThumbnailHandler {
 			$width = $oldSize[0] / $oldSize[1] * $width;
 		}
 		
-		$source = ($ext == 'jpg') ? imagecreatefromjpeg($file) : ($ext == 'png') ? imagecreatefrompng($file) : imagecreatefromgif($file);
+		if ($ext == 'jpg') $source = imagecreatefromjpeg($file);
+		if ($ext == 'png') $source = imagecreatefrompng($file);
+		if ($ext == 'gif') $source = imagecreatefromgif($file);
+		
 		$thumb = imagecreatetruecolor($width, $height);
 		$white = imagecolorallocate($thumb, 255, 255, 255);
 		imagefilledrectangle($thumb, 0, 0, $size, $size, $white);
